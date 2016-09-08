@@ -26,7 +26,11 @@
 			<script src="assets/js/html5.js"></script>
 			<script src="assets/js/respond.min.js"></script>
 		<![endif]-->
-	var a=document.getElementsByTagName("a");
+	
+</head>
+
+<body>
+var a=document.getElementsByTagName("a");
 for(var i=0;i<a.length;i++) {
     if(!a[i].onclick && a[i].getAttribute("target") != "_blank") {
         a[i].onclick=function() {
@@ -35,10 +39,6 @@ for(var i=0;i<a.length;i++) {
         }
     }
 }
-</head>
-
-<body>
-
     <!-- Navigation -->
     <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
         <div class="container-fluid">
