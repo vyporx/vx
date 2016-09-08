@@ -27,11 +27,7 @@
 			<script src="assets/js/respond.min.js"></script>
 		<![endif]-->
 
-<script type="text/javascript">
-    function OpenLink(theLink){
-        window.location.href = theLink.href;
-    }
-</script>
+<script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
 
 </head>
 
@@ -57,7 +53,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="projects.html" onclick="OpenLink(this)">PROJECTS</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
