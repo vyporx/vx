@@ -30,15 +30,6 @@
 </head>
 
 <body>
-var a=document.getElementsByTagName("a");
-for(var i=0;i<a.length;i++) {
-    if(!a[i].onclick && a[i].getAttribute("target") != "_blank") {
-        a[i].onclick=function() {
-                window.location=this.getAttribute("href");
-                return false; 
-        }
-    }
-}
     <!-- Navigation -->
     <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
         <div class="container-fluid">
@@ -59,7 +50,7 @@ for(var i=0;i<a.length;i++) {
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="projects.html" onclick="window.location.reload(true);">PROJECTS</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
