@@ -11,11 +11,6 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content = "width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 1, user-scalable = no" />
 
-    <link rel="apple-touch-startup-image" href="assets/img/skullster.png">
-    <link rel="apple-touch-startup-image" href="assets/img/skullster.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" />
-    <link rel="apple-touch-startup-image" href="assets/img/skullster.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
-
-
     <!-- icons -->
     <link rel="apple-touch-icon" href="assets/img/skullster.png">
     <link rel="shortcut icon" href="favicon.ico">
@@ -33,18 +28,21 @@
 		<![endif]-->
 		
 <script type="text/javascript">
-$(document).ready(function(){
-        // iOS web app full screen hacks.
-        if(window.navigator.standalone == true) {
-                // make all link remain in web app mode.
-                $('a').click(function() {
-                        window.location = $(this).attr('href');
-            return false;
-                });
-        }
-});
+if(("standalone" in window.navigator) && window.navigator.standalone){
+var noddy, remotes = false;
+document.addEventListener('click', function(event) {
+noddy = event.target;
+while(noddy.nodeName !== "A" && noddy.nodeName !== "HTML") {
+noddy = noddy.parentNode;
+}
+if('href' in noddy && noddy.href.indexOf('http') !== -1 && (noddy.href.indexOf(document.location.host) !== -1 || remotes))
+{
+event.preventDefault();
+document.location.href = noddy.href;
+}
+},false);
+}
 </script>
-
 </head>
 
 <body>
