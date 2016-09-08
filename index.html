@@ -26,6 +26,15 @@
 			<script src="assets/js/html5.js"></script>
 			<script src="assets/js/respond.min.js"></script>
 		<![endif]-->
+	var a=document.getElementsByTagName("a");
+for(var i=0;i<a.length;i++) {
+    if(!a[i].onclick && a[i].getAttribute("target") != "_blank") {
+        a[i].onclick=function() {
+                window.location=this.getAttribute("href");
+                return false; 
+        }
+    }
+}
 </head>
 
 <body>
@@ -42,15 +51,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="javascript:this.location = index.html">VX</a>
+                <a class="navbar-brand" href="index.html">VX</a>
             </div>
             <!-- /.navbar-header -->
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="javascript:this.location = index.html">HOME</a></li>
-                    <li><a href="javascript:this.location = projects.html">PROJECTS</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
