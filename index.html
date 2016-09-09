@@ -20,10 +20,6 @@
 
     <!-- Override CSS file - add your own CSS rules -->
     <link rel="stylesheet" href="assets/css/styles.css">
-    
-    <!-- Stylesheet for pulldown refresh -->
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="lib/genericons/genericons.css">
 
     <!-- Conditional comment containing JS files for IE6 - 8 -->
     <!--[if lt IE 9]>
@@ -52,15 +48,6 @@ document.location.href = noddy.href;
 </head>
 
 <body>
-<div id="ptr">
-            <span class="genericon genericon-next"></span>
-            <div class="loading">
-                <span id="l1"></span>
-                <span id="l2"></span>
-                <span id="l3"></span>
-            </div>
-        </div>
-        
     <!-- Navigation -->
     <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
         <div class="container-fluid">
@@ -91,7 +78,6 @@ document.location.href = noddy.href;
     <!-- /.navbar -->
 
     <!-- Page Content -->
-    <div id="content">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
@@ -165,35 +151,13 @@ document.location.href = noddy.href;
         <!-- /.row -->
     </div>
     <!-- /.container-fluid -->
-    </div>
 
     <!-- JQuery scripts -->
     <script src="assets/js/jquery-1.11.2.min.js"></script>
 
     <!-- Bootstrap Core scripts -->
     <script src="assets/js/bootstrap.min.js"></script>
-<script src="lib/hammer.2.0.4.js"></script>
-        <script src="lib/wptr.1.1.js"></script>
 
-        <script>
-            window.onload = function() {
-                WebPullToRefresh.init( {
-                    loadingFunction: exampleLoadingFunction
-                } );
-            };
-            // Just an example loading function that returns a
-            // promise that WebPullToRefresh can use.
-            var exampleLoadingFunction = function() {
-                return new Promise( function( resolve, reject ) {
-                    // Run some async loading code here
-                    if ( true /* if the loading worked */ ) {
-                        resolve();
-                    } else {
-                        reject();
-                    }
-                } );
-            };
-        </script>
 </body>
 
 </html>
