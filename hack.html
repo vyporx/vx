@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VX</title>
+    <meta name="Description" lang="en" content="SITE DESCRIPTION COMING SOON">
+    <meta name="author" content="VyporX">
+    <meta name="robots" content="index, follow">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content = "width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 1, user-scalable = no">
+
+    <!-- icons -->
+    <link rel="apple-touch-icon" href="assets/img/skullster.png">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Bootstrap Core CSS file -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Override CSS file - add your own CSS rules -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Conditional comment containing JS files for IE6 - 8 -->
+    <!--[if lt IE 9]>
+			<script src="assets/js/html5.js"></script>
+			<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+
+<script type="text/javascript">
+if(("standalone" in window.navigator) && window.navigator.standalone){
+var noddy, remotes = false;
+document.addEventListener('click', function(event) {
+noddy = event.target;
+while(noddy.nodeName !== "A" && noddy.nodeName !== "HTML") {
+noddy = noddy.parentNode;
+}
+if('href' in noddy && noddy.href.indexOf('http') !== -1 && (noddy.href.indexOf(document.location.host) !== -1 || remotes))
+{
+event.preventDefault();
+document.location.href = noddy.href;
+}
+},false);
+}
+</script>
+
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container-fluid">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">[vx]</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html"><img src="assets/img/home-icon-white.png" height="15px"> - home</a></li>
+                    <li><a href="projects.html"><img src="assets/img/white-clipboard-512.png" height="15px"> - projects</a></li>
+                    <li><a href="hack.html"><img src="assets/img/Wrenches.png" height="15px"> - hacks</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Page Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+
+                <!-- Page breadcrumb -->
+                <ol class="breadcrumb">
+                    <li>Hacks - Where things can be modified for fun</li>
+                </ol>
+                
+                <p>Information coming soon.</p>
+		<hr>
+
+                
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+
+    <!-- JQuery scripts -->
+    <script src="assets/js/jquery-1.11.2.min.js"></script>
+
+    <!-- Bootstrap Core scripts -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
