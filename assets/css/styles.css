@@ -113,7 +113,7 @@ caption
 .navbar-brand {	font-size: 1.125em; /* 18px/16px = 1.125em */ }
 .navbar-nav > li > a  { font-size: .875em;  /* 14px/16px = .875em */ }
 
-/*Swipe*/
+/*Swipe
 
 .swipe {
   overflow: hidden;
@@ -130,7 +130,7 @@ caption
   min-height: 100%;
   position: relative;
 }
-
+*/
 /**
  * Larger font-sizes can be set for different breakpoints
 */
