@@ -145,7 +145,25 @@ document.location.href = noddy.href;
 
 
     <!-- /.container-fluid -->
+	    <footer class="navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+	  
+	  <button onclick="goBack()">Back</button>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+	  
+	  <button onclick="goForward()">Forward</button>
 
+<script>
+function goForward() {
+    window.history.forward();
+}
+</script>
+  </div>
+</footer>
 
     <!-- JQuery scripts -->
     <script src="assets/js/jquery-1.11.2.min.js"></script>
