@@ -13,9 +13,9 @@ body {
   bottom: -10px;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #222;
-  color: #777;
+  height: 120px;
+  background-color: #eee;
+  color: #555;
 }
 
 
